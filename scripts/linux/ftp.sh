@@ -30,7 +30,7 @@ SRCPORT=$2
 DSTIP=$3
 DSTPORT=$4
 
-STRINGSFILE=$5
+STRINGSFILE="/usr/share/honeyd/scripts/strings/ftpd.strings"
 VERSION=`perl -nle '/FTPD_VERSION (.*)/ and print $1' < $STRINGSFILE`
 
 SERVICE="wu-ftpd/FTP"
