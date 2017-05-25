@@ -3,7 +3,7 @@
 # by Fabian Bieker <fabian.bieker@web.de>
 # modified by DataSoft Corporation
 
-. scripts/misc/base.sh
+. /usr/share/honeyd/scripts/misc/base.sh
 
 SRCIP=$1
 SRCPORT=$2
@@ -13,7 +13,7 @@ DSTPORT=$4
 SERVICE="ident"
 HOST="serv"
 
-STRINGSFILE=$5
+STRINGSFILE="/usr/share/honeyd/scripts/strings/ident.strings"
 USER=`perl -nle '/IDENT_USERNAME (.*)/ and print $1' < $STRINGSFILE`
 
 my_start

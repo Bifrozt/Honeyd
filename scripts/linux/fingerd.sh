@@ -31,7 +31,7 @@ if [ "$name" == "root" ]; then
 	cat << _eof_
 $VERSION at $HOST.$DOMAIN !
 
- $DATE  up 64 days, 15:01, 3 users,  load average: 0.05, 0.11, 0.07
+ $DATE  up 25 days, 12:51, 1 users,  load average: 0.15, 0.11, 0.09
 
  Login: root                             Name: root
  Directory: /root                        Shell: /bin/bash
