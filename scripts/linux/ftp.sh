@@ -8,7 +8,7 @@
 # modified by DataSoft Corporation
 # 
 # Changelog:
-# 0.0.9; using absolute paths
+# 0.0.9; using absolute paths (by Bifrozt)
 #
 # 0.0.8; some ftp comamnds implemented: PWD, TYPE, MODE, PORT (by Fabian Bieker)
 #
