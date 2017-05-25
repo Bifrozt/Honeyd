@@ -8,6 +8,8 @@
 # modified by DataSoft Corporation
 # 
 # Changelog:
+# 0.0.9; using absolute paths
+#
 # 0.0.8; some ftp comamnds implemented: PWD, TYPE, MODE, PORT (by Fabian Bieker)
 #
 # 0.0.7; psyeudo filesystem added (by Fabian Bieker)
@@ -21,7 +23,7 @@
 # 0.0.1: initial release
 # 
 
-. scripts/misc/base.sh
+. /usr/share/honeyd/scripts/misc/base.sh
 
 SRCIP=$1
 SRCPORT=$2
@@ -36,7 +38,7 @@ HOST="serv"
 
 AUTH="no"
 PASS="no"
-DATFILES="scripts/suse7.0/dat/wuftpd.files"
+DATFILES="/usr/share/honeyd/scripts/linux/dat/wuftpd.files"
 
 pwd="/"
 passive=0
