@@ -4,16 +4,18 @@
 #
 # modified by Fabian Bieker <fabian.bieker@web.de>
 # modified by DataSoft Corporation
+# 
+# 0.0.2: using absolute paths (by Bifrozt)
+#
 
-
-. scripts/misc/base.sh
+. /usr/share/honeyd/scripts/misc/base.sh
 
 SRCIP=$1
 SRCPORT=$2
 DSTIP=$3
 DSTPORT=$4
 
-STRINGSFILE=$5
+STRINGSFILE="/usr/share/honeyd/scripts/strings/ssh.strings"
 VERSION=`perl -nle '/SSH_VERSION (.*)/ and print $1' < $STRINGSFILE`
 
 SERVICE="ssh"
@@ -35,3 +37,4 @@ while read name; do
 	fi
 done
 my_stop
+
