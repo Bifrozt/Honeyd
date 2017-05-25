@@ -2,15 +2,17 @@
 #
 # by Fabian Bieker <fabian.bieker@web.de>
 # modified by DataSoft Corporation
-
-. scripts/misc/base.sh
+#
+# 0.0.2: using absolute paths (by Bifrozt)
+#
+. /usr/share/honeyd/scripts/misc/base.sh
 
 SRCIP=$1
 SRCPORT=$2
 DSTIP=$3
 DSTPORT=$4
 
-STRINGSFILE=$5
+STRINGSFILE="/usr/share/honeyd/scripts/strings/fingerd.strings"
 VERSION=`perl -nle '/FINGERD_VERSION (.*)/ and print $1' < $STRINGSFILE`
 
 SERVICE="finger"
